@@ -1,0 +1,24 @@
+name: SpaceCleaner
+options:
+  bundleIdPrefix: com.personal
+  deploymentTarget:
+    iOS: "17.0"
+targets:
+  SpaceCleaner:
+    type: application
+    platform: iOS
+    sources:
+      - SpaceCleaner
+    info:
+      path: Config/Info.plist
+      properties:
+        CFBundleDisplayName: SpaceCleaner
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSPhotoLibraryUsageDescription: "Find large videos and screenshots so you can delete them."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.personal.spacecleaner
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
